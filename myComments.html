@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <!-- WEBGLRenderer -->
+  <h1>
+    
+    renderer = WebGLRenderer - способ отображения обьекта в указанный блок {canvas:canvas}
+
+  </h1>
+
+  <p>
+    setClearColor - задать фон обьекту
+  </p>
+
+  <!-- SCENE -->
+
+  <h1>
+     Scene -  Scene - нужна для отображения обьекта в указанном гео расположении
+  </h1>
+
+  <!-- PerspectiveCamera -->
+
+  <h1>
+    Camera - PerspectiveCamera - дает возможность установки точки камеры просмотра дефолтные параметры(45,width / height, 0.1 , 5000)
+
+    установка камеры camera.position.set(0 , 0 , 1000)
+  </h1>
+
+  <!-- AmbientLight -->
+  
+  <h1>
+    AmbientLight - создает падение света в указанную точку (0x000000)
+  </h1>
+
+  <!-- SphereGeometry -->
+
+  <h1>
+    Geometry - SphereGeometry - позволяет создать сферообразный 3д обьект (width , 12 , 12 )
+
+    Geometry - PlaneGeometry - создает квадрат (width , height , 12 , 12)
+  </h1>
+
+
+  <!-- material -->
+
+  <h1>
+    Конечная часть 
+
+    material - MeshBasicMaterial - осуществляем отображения материала в том образе в котором передали параметры выше (color , wireframe)
+
+  </h1>
+
+   <!-- Mesh -->
+
+   <h1>
+     mesh - создает симбиоз из Geometry & material (Geometry , material) и добавляется в scene
+   </h1>
+
+
+   <!-- end -->
+
+   <h1>
+
+    renderer.render(scene , camera)
+   </h1>
+</body>
+</html>
